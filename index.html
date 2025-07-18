@@ -24,8 +24,16 @@
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item mobile-contact-li"><button class="contact-button mobile-btn">Contact Me</button></li>
             </ul>
-            <button id="contactBtn" class="contact-button">Contact Me</button>
+            <div class="header-right">
+                <button class="contact-button desktop-btn">Contact Me</button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -37,15 +45,18 @@
                 <p class="hero-description">Self-driven and detail-oriented developer building dynamic and responsive web applications from scratch, with a strong focus on UI/UX design and backend integration.</p>
                 <div class="hero-socials">
                     <a href="https://www.linkedin.com/in/jatin-kumar-h-5596691b7/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="https://github.com/JatinKumarH" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="code-icon">&lt;/&gt;</div>
+                <div class="typewriter-container">
+                  <span id="typewriter-text" class="typewriter-text"></span><span class="cursor">&nbsp;</span>
+                </div>
             </div>
         </section>
 
-        <section id="about" class="content-section reveal">
+        <section id="about" class="content-section">
             <h2 class="section-title">About Me</h2>
             <div class="about-container">
                 <div class="about-text">
@@ -64,7 +75,7 @@
             </div>
         </section>
 
-        <section id="experience" class="content-section reveal">
+        <section id="experience" class="content-section">
             <h2 class="section-title">Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
@@ -79,7 +90,7 @@
             </div>
         </section>
 
-        <section id="projects" class="content-section reveal">
+        <section id="projects" class="content-section">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
@@ -96,8 +107,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-card-content">
-                        <h3 class="project-title">Personal Portfolio (This one 🤣)</h3>
-                        <p class="project-description">Built and deployed a personal website using HTML/CSS/JavaScript to showcase certifications and projects, focusing on responsive design.</p>
+                        <h3 class="project-title">Personal Portfolio (This One🤣)</h3>
+                        <p class="project-description">Built and deployed a personal website using HTML/CSS/JavaScript to showcase skills and projects, focusing on responsive design.</p>
                          <div class="project-tags">
                             <span>HTML5</span>
                             <span>CSS3</span>
@@ -134,7 +145,9 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="submit-button">Send Message</button>
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Send Message</span>
+                </button>
             </form>
         </div>
     </div>
